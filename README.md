@@ -131,9 +131,9 @@ A continuación, se demuestra el funcionamiento visual de los componentes en la 
 
 **Sistema de Notificaciones Flotantes:**
 
- [Toasts](img/toasts1.png)
-  [Toasts](img/toasts2.png)
-   [Toasts](img/toasts3.png)
+ ![Toasts](img/toasts1.png)
+ ![Toasts](img/toasts2.png)
+ ![Toasts](img/toasts3.png)
 
 
 
