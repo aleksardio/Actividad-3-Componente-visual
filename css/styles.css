@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    padding-bottom: 50px;
+}
+
+.header-principal {
+    background-color: #1a1a1a;
+    color: #ffed2c;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.header-principal p {
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.seccion-demo, .seccion-documentacion {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.separador {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 2rem 0;
+}
+
+/*slider*/
+.aui-carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #000;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.aui-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.aui-slide.activo {
+    opacity: 1;
+    z-index: 1;
+}
+
+.aui-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    background-color: #ffffff; 
+    padding: 20px;
+    padding-bottom: 90px; 
+}
+
+.aui-info-moto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.9));
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.aui-btn-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.aui-btn-nav:hover { background: rgba(0,0,0,0.8); color: #ffed2c; }
+.aui-btn-prev { left: 10px; }
+.aui-btn-next { right: 10px; }
+
+/* Botón interactivo dentro del carrusel */
+.aui-btn-accion {
+    background-color: #ffed2c;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.aui-btn-accion:hover { transform: scale(1.05); }
+
+/*modal*/
+.aui-modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.aui-modal-overlay.activo {
+    opacity: 1;
+    visibility: visible;
+}
+
+.aui-modal {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    transform: translateY(-50px);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.aui-modal-overlay.activo .aui-modal {
+    transform: translateY(0);
+}
+
+.aui-modal-cerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #888;
+}
+
+.aui-modal-cerrar:hover { color: #e74c3c; }
+
+/*toast*/
+#toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.aui-toast {
+    min-width: 250px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateX(120%);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.aui-toast.mostrar {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.aui-toast.success { background-color: #2ecc71; border-left: 5px solid #27ae60; }
+.aui-toast.error { background-color: #e74c3c; border-left: 5px solid #c0392b; }
+.aui-toast.info { background-color: #3498db; border-left: 5px solid #2980b9; }
+
+/*doc*/
+.doc-bloque {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.codigo-ejemplo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    background: #282c34;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.codigo-ejemplo pre {
+    flex-grow: 1;
+    color: #abb2bf;
+    overflow-x: auto;
+}
+
+.btn-probar {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.btn-success { background: #2ecc71; }
+.btn-error { background: #e74c3c; }
+.btn-info { background: #3498db; }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>act3</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header-principal">
+        <h1>Librería de Componentes</h1>
+        <p>Catálogo interactivo de motocicletas utilizando Vanilla JS</p>
+    </header>
+
+    <main class="contenedor">
+        <section class="seccion-demo">
+            <h2>Galería de Motocicletas</h2>
+            <div id="mi-carrusel"></div>
+        </section>
+
+        <hr class="separador">
+
+        <section class="seccion-documentacion">
+            <h2>Guía de Implementación y Pruebas</h2>
+            
+            <div class="doc-bloque">
+                <h3>1. Notificaciones Flotantes (Toasts)</h3>
+                <p>Muestra mensajes temporales en la esquina de la pantalla.</p>
+                <div class="codigo-ejemplo">
+                    <pre><code>AleksUI.mostrarToast('Vehículo agregado a favoritos', 'success');</code></pre>
+                    <button id="btn-prueba-toast-exito" class="btn-probar btn-success">Probar Éxito</button>
+                </div>
+                <div class="codigo-ejemplo">
+                    <pre><code>AleksUI.mostrarToast('Error al conectar con el servidor', 'error');</code></pre>
+                    <button id="btn-prueba-toast-error" class="btn-probar btn-error">Probar Error</button>
+                </div>
+            </div>
+
+            <div class="doc-bloque">
+                <h3>2. Ventana Modal Interactiva</h3>
+                <p>Genera ventanas emergentes dinámicas con cualquier contenido.</p>
+                <div class="codigo-ejemplo">
+                    <pre><code>AleksUI.abrirModal('Especificaciones', 'Motor: 998cc, Potencia: 200 HP...');</code></pre>
+                    <button id="btn-prueba-modal" class="btn-probar btn-info">Abrir Modal de Prueba</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="toast-container"></div>
+
+    <script src="js/aleks-ui.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
