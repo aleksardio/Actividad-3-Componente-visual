@@ -114,19 +114,28 @@ AleksUI.crearCarrusel('mi-galeria', motos);
 
 A continuación, se demuestra el funcionamiento visual de los componentes en la interfaz web:
 
-> **Nota:** Reemplaza estos bloques con tus imágenes reales subidas al repositorio, usando la sintaxis `![descripción](ruta/imagen.png)`.
-
 **Galería de Motocicletas (Carrusel Dinámico):**
 
-<!-- ![Carrusel](img/carrusel.png) -->
+![Carrusel](img/carrusel1.png)
+![Carrusel](img/carrusel2.png)
+![Carrusel](img/carrusel3.png)
+
 
 **Ventana Modal de Especificaciones:**
 
-<!-- ![Modal](img/modal.png) -->
+ ![Modal](img/modal1.png)
+ ![Modal](img/modal2.png)
+  ![Modal](img/modal3.png)
+
+
 
 **Sistema de Notificaciones Flotantes:**
 
-<!-- ![Toasts](img/toasts.png) -->
+ [Toasts](img/toasts1.png)
+  [Toasts](img/toasts2.png)
+   [Toasts](img/toasts3.png)
+
+
 
 ---
 

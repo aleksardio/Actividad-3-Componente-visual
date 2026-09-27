@@ -123,7 +123,6 @@ const AleksUI = {
             
             slides[slideActual].classList.add('activo');
         };
-
         btnNext.addEventListener('click', () => cambiarSlide('next'));
         btnPrev.addEventListener('click', () => cambiarSlide('prev'));
     }
