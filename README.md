@@ -143,7 +143,7 @@ A continuación, se demuestra el funcionamiento visual de los componentes en la 
 
 En este breve video se expone el problema que resuelve la librería, la interacción en tiempo real del usuario con la interfaz y el dinamismo con el que JavaScript renderiza el HTML.
 
-👉 [Ver video en YouTube]()
+👉 [Ver video en YouTube](https://www.youtube.com/watch?v=OHN1nx4mDl0)
 
 ---
 
@@ -151,4 +151,4 @@ En este breve video se expone el problema que resuelve la librería, la interacc
 
 El proyecto está funcional e integrado en vivo en el siguiente enlace. Se puede interactuar con el carrusel, abrir los modales técnicos y generar notificaciones de prueba:
 
-👉 [Ver Aleks UI en vivo (GitHub Pages)]()
+👉 [Ver Aleks UI en vivo (GitHub Pages)](https://aleksardio.github.io/Actividad-3-Componente-visual/)
